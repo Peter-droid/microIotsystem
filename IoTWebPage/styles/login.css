@@ -1,0 +1,127 @@
+root{
+    --windowW:100px;
+    --windowH:100px;
+	--titleH:0px;
+	--userinfoblockH:0px;
+}
+
+.userinfo{
+	border-radius: 5px;
+	padding: 7px 2px;
+	display: inline-block;
+	outline-color: #808080;
+	
+}
+.userinfo1{
+	text-align:center;
+	
+}
+
+h1{
+	text-align: center;
+	position: fixed;
+	top: var(--titleH);
+	left:0px;
+	right:0px;
+}
+
+.userlogin{
+	text-align: center;
+}
+
+.userinfogroup{
+	position: fixed;
+	top:var(--windowH);
+	left: 0px;
+	right: 0px;
+}
+
+body {
+
+  background-color: #e74c3c;
+
+  animation: bg-color 10s infinite;
+
+  -webkit-animation: bg-color 10s infinite;
+
+}
+
+@-webkit-keyframes bg-color {
+
+  0% { background-color: #9ee793; }
+
+  20% { background-color: #5df1ed; }
+
+  40% { background-color: #aaff7f; }
+
+  60% { background-color: #ff8295; }
+
+  80% { background-color: #ff8295; }
+
+  100% { background-color: #9ee793; }
+
+}
+
+@keyframes bg-color {
+
+  0% { background-color: #9ee793; }
+
+  20% { background-color: #5df1ed; }
+
+  40% { background-color: #aaff7f; }
+
+  60% { background-color: #ff8295; }
+
+  80% { background-color: #ff8295; }
+
+  100% { background-color: #9ee793; }
+}
+
+* {
+            margin: 0;
+            padding: 0
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 50px auto;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            color: #fff;
+            background-color: #105069;
+            font-size: 36px;
+            font-weight: bold;
+            position: relative;
+            transition: 1s;
+        }
+
+        .wrap .top,
+        .wrap .bottom {
+            width: 0;
+            height: 5px;
+            background-color: #105069;
+            position: absolute;
+            transition: 1s;
+        }
+
+        .wrap .top {
+            top: 0;
+            left: 0
+        }
+
+        .wrap .bottom {
+            bottom: 0;
+            right: 0
+        }
+
+        .wrap:hover .top,
+        .wrap:hover .bottom{
+            width: 100%;
+        }
+
+        .wrap:hover {
+            background-color: #15afc7;
+            color: #105069;
+        }
+
